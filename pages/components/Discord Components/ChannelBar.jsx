@@ -1,4 +1,4 @@
-import { Box, Grid } from "@chakra-ui/layout";
+import { Box, Grid } from "@chakra-ui/react";
 import SearchInput from "../ChannelBarComps/SearchInput";
 import Main from "../ChannelBarComps/Main";
 import AccountInfo from "../ChannelBarComps/AccountInfo";
