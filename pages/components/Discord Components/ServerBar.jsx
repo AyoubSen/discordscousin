@@ -24,17 +24,19 @@ function ServerBar(props) {
         type='1'
         server={props.type}
       />
-      {servers.map(({ server, id }) => {
-        return (
-          <HomeIcon
-            tooltip={server.Name}
-            image={server.Picture}
-            href={"/Channels/" + id}
-            type='2'
-            server={props.type}
-          />
-        );
-      })}
+      {servers
+        ? servers.map(({ server, id }) => {
+            return (
+              <HomeIcon
+                tooltip={server.Name}
+                image={server.Picture}
+                href={"/Channels/" + id}
+                type='2'
+                server={props.type}
+              />
+            );
+          })
+        : "no servers yet"}
     </Flex>
   );
 }

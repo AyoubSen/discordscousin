@@ -15,7 +15,7 @@ function Me() {
         />
       </Head>
       <Grid h='100vh' templateColumns='72px 240px auto'>
-        <ServerBar />
+        <ServerBar type='home' />
         <ChannelBar />
         <Main />
       </Grid>
