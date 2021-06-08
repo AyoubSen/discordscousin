@@ -1,11 +1,7 @@
-import { Box, Grid } from "@chakra-ui/react";
+import { Grid } from "@chakra-ui/react";
 import SearchInput from "../ChannelBarComps/SearchInput";
 import Main from "../ChannelBarComps/Main";
 import AccountInfo from "../ChannelBarComps/AccountInfo";
-import db from "../../../firebase";
-import firebase from "firebase";
-import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
 
 function ChannelBar({ serverName, channels, setCurrentChannel }) {
   return (

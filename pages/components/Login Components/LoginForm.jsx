@@ -1,7 +1,6 @@
 import { Box, FormControl, FormLabel, Input, Button } from "@chakra-ui/react";
 import { useFormik } from "formik";
 import db from "../../../firebase";
-import firebase from "firebase";
 
 function LoginForm() {
   const colors = [

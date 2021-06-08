@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Flex, Input, Button } from "@chakra-ui/react";
 function MessageInput({ sendMessages, setInput, input }) {
   return (

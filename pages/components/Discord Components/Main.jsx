@@ -18,8 +18,6 @@ function Main({
       <Header currentChannel={currentChannel} channels={channels} />
       {servId ? (
         <ChatOnline
-          currentChannel={currentChannel}
-          channels={channels}
           messages={messages}
           sendMessages={sendMessages}
           setInput={setInput}

@@ -1,23 +1,10 @@
-import { Grid, Flex, Box } from "@chakra-ui/react";
+import { Grid } from "@chakra-ui/react";
 import MessageInput from "./MessageInput";
 import Messages from "./Messages";
-function Chat({
-  currentChannel,
-  channels,
-  messages,
-  sendMessages,
-  setInput,
-  input,
-  users,
-}) {
+function Chat({ messages, sendMessages, setInput, input, users }) {
   return (
     <Grid color='white' templateRows='auto 70px'>
-      <Messages
-        currentChannel={currentChannel}
-        channels={channels}
-        messages={messages}
-        users={users}
-      />
+      <Messages messages={messages} users={users} />
       <MessageInput
         sendMessages={sendMessages}
         setInput={setInput}

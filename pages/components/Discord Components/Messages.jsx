@@ -1,7 +1,6 @@
-import { useState, useEffect } from "react";
-import { Grid, Flex, Box, Image, Text, Center } from "@chakra-ui/react";
+import { Flex, Box, Text, Center } from "@chakra-ui/react";
 
-function Messages({ currentChannel, channels, messages, users }) {
+function Messages({ messages, users }) {
   const getColor = (username) => {
     let colorMessage;
     users.map((user) => {

@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Flex } from "@chakra-ui/react";
 import HomeIcon from "./ServerBarComps/HomeIcon";
 import db from "../../../firebase";
-import firebase from "firebase";
 
 function ServerBar(props) {
   const [servers, setServers] = useState([]);
